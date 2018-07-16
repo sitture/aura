@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sitture</groupId>
-  <artifactId>gauge-rest</artifactId>
+  <artifactId>aura</artifactId>
   <version>0.0.1</version>
 
-  <name>gauge-rest</name>
+  <name>aura</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
