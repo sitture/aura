@@ -2,6 +2,8 @@
 
 This project adheres to [Semantic Versioning](https://semver.org).
 
+[![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
+
 ## Usage
 
 * *TODO*
