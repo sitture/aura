@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <gauge.java.version>0.6.7</gauge.java.version>
+    <gauge.java.version>0.6.8</gauge.java.version>
   </properties>
 
   <dependencies>
