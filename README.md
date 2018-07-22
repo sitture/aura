@@ -1,9 +1,11 @@
 # aura
-This project adheres to [Semantic Versioning](https://semver.org).
-
 [![CircleCI](https://circleci.com/gh/haroon-sheikh/aura.svg?style=svg)](https://circleci.com/gh/haroon-sheikh/aura)
 
+*__Description of the project.__*
+
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
+
+This project adheres to [Semantic Versioning](https://semver.org).
 
 ## Usage
 
