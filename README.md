@@ -1,4 +1,4 @@
-# aura
+# aura (WIP)
 *__Description of the project.__*
 
 [![CircleCI](https://circleci.com/gh/haroon-sheikh/aura.svg?style=shield)](https://circleci.com/gh/haroon-sheikh/aura)
