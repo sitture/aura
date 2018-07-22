@@ -1,5 +1,6 @@
 # aura
 This project adheres to [Semantic Versioning](https://semver.org).
+
 [![CircleCI](https://circleci.com/gh/haroon-sheikh/aura.svg?style=svg)](https://circleci.com/gh/haroon-sheikh/aura)
 
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
