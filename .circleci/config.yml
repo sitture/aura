@@ -30,3 +30,31 @@ jobs:
       # run tests!
       - run: mvn clean test
 
+  mockapi:
+    machine:
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - run:
+          name: Run Acceptance Tests
+          command: |
+            docker-compose build
+            docker-compose up
+          background: true
+      - run:
+          name: Curl Mockserver
+          command: |
+            sleep 10
+            docker ps
+            if [ $(curl -X GET -sLI -w "%{http_code}\\n" "http://127.0.0.1:8080/mock/api" -o /dev/null --connect-timeout 5 --max-time 10) -ne "200" ] ; then echo "Mockserver not running!" 1>&2; exit 1; fi
+      - run:
+          name: Shut Down Images
+          command: docker-compose down -v --remove-orphans
+          when: always
+
+workflows:
+  version: 2
+  build_and_mockapi:
+    jobs:
+      - build
+      - mockapi
