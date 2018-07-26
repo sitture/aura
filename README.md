@@ -1,7 +1,7 @@
 # aura (WIP)
 *__Description of the project.__*
 
-[![CircleCI](https://circleci.com/gh/haroon-sheikh/aura.svg?style=svg)](https://circleci.com/gh/haroon-sheikh/aura)
+[![CircleCI](https://circleci.com/gh/sitture/aura.svg?style=svg)](https://circleci.com/gh/sitture/aura)
 
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
 
