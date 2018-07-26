@@ -39,9 +39,9 @@ jobs:
           name: Run Acceptance Tests
           command: |
             docker-compose build
-            docker-compose up -d
+            docker-compose up
             sleep 10
-            if [ $(curl -sLI -w "%{http_code}\\n" "http://127.0.0.1:8080/mock/api" -o /dev/null --connect-timeout 5 --max-time 10) -ne "200" ] ; then echo "Mockserver not running!" 1>&2; exit 1; fi
+          background: true
       - run:
           name: Curl Mockserver
           command: if [ $(curl -sLI -w "%{http_code}\\n" "http://127.0.0.1:8080/mock/api" -o /dev/null --connect-timeout 5 --max-time 10) -ne "200" ] ; then echo "Mockserver not running!" 1>&2; exit 1; fi
