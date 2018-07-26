@@ -39,7 +39,7 @@ jobs:
           name: Run Acceptance Tests
           command: |
             docker-compose build
-            docker-compose up
+            docker-compose up -d
             sleep 10
       - run:
           name: Curl Mockserver
