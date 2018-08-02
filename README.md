@@ -12,29 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org).
 
 ## How to add mappings?
 
-* To map a request, add a json file with request:
-```json
-{
-	  "request": {
-	  "method": "GET",
-	  "url": "/mock/api"
-	  }
-}
-```
-* To map a response, add a json file with response:
-```json
-{
-	  "response": {
-	  	"status": 200,
-	  	"jsonBody": {
-	    "project": "mock-api"
-	    	},
-	    "headers": {
-	      "Content-Type": "application/json"
-	  	  }
-	  	 }
-}
-```
+* TODO
 
 ## Issues & Contributions
 
