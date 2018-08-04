@@ -7,10 +7,7 @@
 
 This project adheres to [Semantic Versioning](https://semver.org).
 
-# Usage
-
-
-## How to add mappings?
+## Usage
 
 * TODO
 
