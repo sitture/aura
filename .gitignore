@@ -30,4 +30,4 @@ local.properties
 target/
 output/
 extent-report/
-*.DS_Store
+.DS_Store
