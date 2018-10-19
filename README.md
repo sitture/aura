@@ -5,8 +5,8 @@
 
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
 
-All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.md). 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) 
+All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.md).
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Usage
@@ -19,4 +19,4 @@ Please [open an issue here](../../issues) on GitHub if you have a problem, sugge
 
 Pull requests are welcome and encouraged! Any contributions should include new or updated unit tests as necessary to maintain thorough test coverage.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
