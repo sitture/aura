@@ -1,6 +1,8 @@
 # RESTest.io
 
-What is RESTest?
+## What is RESTest?
+
+This is a simple library of **pre-defined steps** for running API Tests within a Gauge based project.
 
 ## Contribute to Documentation
 
