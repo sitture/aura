@@ -11,6 +11,7 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Directory Structure
 
+```bash
 .
 ├── api
 │   ├── Dockerfile
@@ -41,6 +42,7 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ├── README.md
 ├── docker-compose.yml
 └── pom.xml
+```
 
 ## Usage
 
