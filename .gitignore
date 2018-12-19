@@ -26,8 +26,10 @@ local.properties
 .loadpath
 .recommenders
 
+
 # build tool
 target/
 output/
 extent-report/
+hugo-material-docs/
 .DS_Store

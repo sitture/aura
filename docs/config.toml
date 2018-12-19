@@ -1,8 +1,73 @@
-baseURL = "https://restest.io/"
-languageCode = "en-gb"
-title = "RESTest.io"
-theme = "learn"
+baseurl = "/"
+languageCode = "en-us"
+title = "gauge-requests.io"
+theme = "docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
 
-# For search functionality
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+[params]
+	# General information
+	author = "haroon-sheikh"
+	description = "A simple library of pre-defined steps for running API Tests within a Gauge-Java based project."
+	copyright = "Released under the MIT license"
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/sitture/aura"
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	favicon = ""
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = []
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "teal"
+    	accent  = "teal"
+
+  [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = ""
+	github  = "sitture/aura"
+	email   = ""
+
+
+[[menu.main]]
+  name   = "Welcome"
+	url    = "/"
+	weight = 1
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Adding content"
+	url    = "adding-content/"
+	weight = 20
+
+[[menu.main]]
+	name   = "Roadmap"
+	url    = "roadmap/"
+	weight = 30
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
