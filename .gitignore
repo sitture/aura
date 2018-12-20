@@ -26,7 +26,6 @@ local.properties
 .loadpath
 .recommenders
 
-
 # build tool
 target/
 output/
