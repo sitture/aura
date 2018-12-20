@@ -38,7 +38,6 @@ googleAnalytics = ""
     	text = "Ubuntu"
     	code = "Ubuntu Mono"
 
-
 [social]
 	twitter = ""
 	github  = "sitture/aura"
