@@ -6,10 +6,10 @@
 
   <groupId>com.sitture</groupId>
   <artifactId>aura</artifactId>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
 
   <name>gauge-requests</name>
-  <!-- FIXME change it to the project's website -->
+  <!-- TODO change it to the project's website -->
   <url>http://www.example.com</url>
 
   <properties>
