@@ -14,6 +14,11 @@
 .classpath
 .project
 
+# Gauge Specific
+.gauge
+logs/
+reports/
+
 .metadata
 bin/
 tmp/
