@@ -58,7 +58,7 @@ The project uses a stub api for testing the specifications. Bring up the contain
 docker-compose up stubapi -d
 ```
 
-## Running the Tests:
+## Running the Tests
 
 
 

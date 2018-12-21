@@ -28,6 +28,12 @@
 
 Contributions can be of many forms:
 
-- Open an issue, or participate in an existing one. 
-- Write some code, and send us a pull request.
+- Open an issue, or participate in an existing one
+- Write some code, and send us a pull request
 - Enhance the documentation
+
+If you'd like to contribute, please be mindful of the following guidelines:
+
+- All changes should include suitable Unit/Integration tests
+- A single change per pull request
+- Update the documentation if required
