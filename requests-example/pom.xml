@@ -29,11 +29,6 @@
             <artifactId>gauge-requests</artifactId>
             <version>${projectVersion}</version>
         </dependency>
-        <dependency>
-            <groupId>com.sitture</groupId>
-            <artifactId>aura</artifactId>
-            <version>0.0.1</version>
-        </dependency>
     </dependencies>
 
     <build>
