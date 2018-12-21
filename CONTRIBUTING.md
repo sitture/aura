@@ -34,6 +34,7 @@ Contributions can be of many forms:
 
 If you'd like to contribute, please be mindful of the following guidelines:
 
-- All changes should include suitable Unit/Integration tests
+- All changes should include suitable Unit/Integration tests and adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
 - A single change per pull request
 - Update the documentation if required
+- Changes  
