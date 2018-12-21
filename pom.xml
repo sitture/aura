@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.sitture</groupId>
+
+    <groupId>io.github.sitture</groupId>
     <artifactId>gauge-requests-top</artifactId>
     <packaging>pom</packaging>
-
     <version>${projectVersion}</version>
-
     <name>${project.artifactId}</name>
     <url>${project.artifactId}.github.io</url>
     <description></description>
-
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>http://www.opensource.org/licenses/mit-license.php</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <name>Haroon Sheikh</name>
-            <id>haroon-sheikh</id>
-            <organization>Sitture</organization>
-        </developer>
-    </developers>
 
     <properties>
         <projectVersion>0.1.0</projectVersion>
@@ -52,5 +36,20 @@
             <version>${gauge.java.version}</version>
         </dependency>
     </dependencies>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Haroon Sheikh</name>
+            <id>haroon-sheikh</id>
+            <organization>Sitture</organization>
+        </developer>
+    </developers>
 
 </project>

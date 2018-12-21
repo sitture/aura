@@ -1,4 +1,4 @@
-package com.github.sitture;
+package io.github.sitture;
 
 import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.Table;

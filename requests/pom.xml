@@ -3,12 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.sitture</groupId>
+        <groupId>io.github.sitture</groupId>
         <artifactId>gauge-requests-top</artifactId>
         <version>${projectVersion}</version>
         <relativePath>../</relativePath>
     </parent>
 
     <artifactId>gauge-requests</artifactId>
+    <packaging>jar</packaging>
 
 </project>

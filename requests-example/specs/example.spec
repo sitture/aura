@@ -17,6 +17,7 @@ tags: single word
 
 * The word "gauge" has "3" vowels.
 * print hello world!
+* print another
 
 
 Vowel counts in multiple word
