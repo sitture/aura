@@ -48,6 +48,20 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * TODO
 
+## Running Locally
+
+### Stub API
+
+The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
+
+```bash
+docker-compose up stubapi -d
+```
+
+## Running the Tests:
+
+
+
 ## Issues & Contributions
 
 Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comment.
