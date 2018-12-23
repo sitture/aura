@@ -17,7 +17,7 @@ tags: single word
 
 * The word "gauge" has "3" vowels.
 * print hello world!
-* print another "gauge-requests"
+* print another "<env:package_to_scan>"
 
 
 Vowel counts in multiple word
