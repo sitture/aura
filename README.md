@@ -24,8 +24,10 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
 
 ```bash
-docker-compose up stubapi -d
+docker-compose -f docker-compose-stubapi.yml up -d
 ```
+
+The stub api will then be accessible at `http://127.0.0.1:8080`
 
 ## Running the Tests
 
