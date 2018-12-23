@@ -9,44 +9,27 @@ All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.m
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## Directory Structure
+## Standout Features
 
-```bash
-.
-├── api
-│   ├── Dockerfile
-│   ├── __files
-│   ├── entrypoint.sh
-│   └── mappings
-│       └── mock
-│           └── api.json
-├── docs
-│   ├── archetypes
-│   │   └── default.md
-│   ├── config.toml
-│   ├── content
-│   │   ├── _index.md
-│   │   └── getting-started
-│   │       └── _index.md
-│   └── themes
-│       └── learn
-├── src
-│   └── main
-│       └── java
-│           └── com
-│               └── sitture
-│                   └── ApiSpec.java
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── docker-compose.yml
-└── pom.xml
-```
+* TODO
 
 ## Usage
 
 * TODO
+
+## Running Locally
+
+### Stub API
+
+The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
+
+```bash
+docker-compose -f docker-compose-stubapi.yml up -d
+```
+
+The stub api will then be accessible at `http://127.0.0.1:8080`
+
+## Running the Tests
 
 ## Issues & Contributions
 
