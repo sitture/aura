@@ -13,9 +13,9 @@ public class ApiSpec {
 
     @Step("print another <hello>")
     public void printAnother(String hello) {
-        System.out.println("Hello " + hello);
         try {
-            System.out.println(Unirest.get("http://stubapi:8080/mock/api").asJson().getBody());
+            final String url = System.getenv("base_url");
+            System.out.println(Unirest.get(url + "/mock/api").asJson().getBody());
         } catch (UnirestException e) {
             e.printStackTrace();
         }
