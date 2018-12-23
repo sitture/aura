@@ -6,10 +6,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run Acceptance Tests
+          name: Build Images
           command: |
             docker-compose -f docker-compose-ci.yml build
-            docker-compose -f docker-compose-ci.yml up
+      - run:
+          name: Build project
+          command: |
+            docker-compose -f docker-compose-ci.yml run requests
       - run:
           name: Shut Down Images
           command: docker-compose -f docker-compose-ci.yml down -v --remove-orphans
