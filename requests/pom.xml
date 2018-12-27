@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>io.github.sitture</groupId>
-        <artifactId>gauge-requests-top</artifactId>
+        <artifactId>parent</artifactId>
         <version>${projectVersion}</version>
         <relativePath>../</relativePath>
     </parent>
@@ -17,6 +17,16 @@
             <groupId>com.mashape.unirest</groupId>
             <artifactId>unirest-java</artifactId>
             <version>1.4.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.12.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.5</version>
         </dependency>
     </dependencies>
 

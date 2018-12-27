@@ -4,7 +4,7 @@
 
     <parent>
         <groupId>io.github.sitture</groupId>
-        <artifactId>gauge-requests-top</artifactId>
+        <artifactId>parent</artifactId>
         <version>${projectVersion}</version>
         <relativePath>../</relativePath>
     </parent>
