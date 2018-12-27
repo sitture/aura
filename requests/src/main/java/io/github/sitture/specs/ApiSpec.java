@@ -26,16 +26,13 @@ public class ApiSpec {
     }
 
     @Step("print another <hello>")
-    public void printAnother(String hello) throws IOException {
+    public void printAnother(String hello) {
         try {
             final String url = System.getenv("base_url");
             System.out.println(Unirest.get(url + "/mock/api").asJson().getBody());
-            run(url + "/mock/api");
         } catch (UnirestException e) {
             e.printStackTrace();
         }
-
-
     }
 
     static OkHttpClient client = new OkHttpClient();
