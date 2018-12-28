@@ -1,12 +1,12 @@
 package io.github.sitture.specs;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import io.github.sitture.requests.RequestType;
+import io.github.sitture.support.Util;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -28,8 +28,11 @@ public class ApiSpec {
     @Step("print another <hello>")
     public void printAnother(String hello) {
         try {
-            final String url = System.getenv("base_url");
-            System.out.println(Unirest.get(url + "/mock/api").asJson().getBody());
+            // substitute env vars
+            String url = Util.getEnvSubstitutedString(hello);
+            // TODO: check if valid url, else throw an exception
+            // TODO: Add url to the request object
+            System.out.println(Unirest.get(url + "/get/helloworld").asJson().getBody());
         } catch (UnirestException e) {
             e.printStackTrace();
         }

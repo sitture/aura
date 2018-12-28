@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.apache.commons.text.StringSubstitutor;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class HttpRequest {
         a.add("haroon");
         request.setHeaders(a);
         System.out.println(new Gson().toJson(request));
+        System.out.println(StringSubstitutor.replace("${PATH}", System.getenv()));
     }
 
     private static String run(String url) throws IOException {

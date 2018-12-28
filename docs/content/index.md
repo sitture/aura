@@ -4,11 +4,15 @@ type: index
 weight: 0
 ---
 
+[![CircleCI](https://circleci.com/gh/sitture/aura.svg?style=shield)](https://circleci.com/gh/sitture/aura) [![Maintainability](https://api.codeclimate.com/v1/badges/b5cc25a0c4b0722a6c60/maintainability)](https://codeclimate.com/github/sitture/aura/maintainability) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?maxAge=2592000)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](../../issues)
+
+[![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
+
 ## What is gauge-requests?
 
 This is a simple library of **pre-defined steps** for running API Tests within a [Gauge-Java](https://github.com/getgauge/gauge-java) based project.
 
-## Why use gauge-requests?
+## Standout Features
 
 ### Contribute to Documentation
 

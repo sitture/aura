@@ -1,12 +1,12 @@
 {
   "request": {
     "method": "GET",
-    "url": "/mock/api"
+    "url": "/get/helloworld"
   },
   "response": {
     "status": 200,
     "jsonBody": {
-      "project": "mock-api"
+      "message": "Hello, World!"
     },
     "headers": {
       "Content-Type": "application/json"

@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-MAINTAINER Haroon Sheikh <haroon.sheikh@outlook.com>
+MAINTAINER Haroon Sheikh <haroon@sitture.com>
 
 # set working directory
 WORKDIR /home/wiremock

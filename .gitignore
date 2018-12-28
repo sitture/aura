@@ -10,9 +10,11 @@
 
 # IDE specific
 .idea
+.vscode
 *.iml
 .classpath
 .project
+.factorypath
 
 # Gauge Specific
 .gauge

@@ -15,13 +15,14 @@
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
         <gauge-maven-plugin.version>1.3.3</gauge-maven-plugin.version>
+        <gauge-java.version>[0.6.9,)</gauge-java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
-            <version>[0.6.8,)</version>
+            <version>${gauge-java.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

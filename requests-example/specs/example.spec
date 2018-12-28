@@ -9,6 +9,7 @@ To execute this specification, run
 
 
 * Vowels in English language are "aeiou".
+* set URI to "${BASE_URL}"
 
 Vowel counts in single word
 ---------------------------
@@ -18,7 +19,7 @@ tags: single word
 * The word "gauge" has "3" vowels.
 * print hello world!
 * request type is "GET"
-* print another "hello"
+* print another "${BASE_URL}"
 
 Vowel counts in multiple word
 -----------------------------
