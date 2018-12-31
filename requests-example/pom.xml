@@ -21,19 +21,12 @@
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
-            <version>[0.6.8,)</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>3.10.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.github.sitture</groupId>
             <artifactId>gauge-requests</artifactId>
-            <version>${projectVersion}</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 
