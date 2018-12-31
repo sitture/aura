@@ -2,6 +2,7 @@ package io.github.sitture.support;
 
 import org.apache.commons.text.StringSubstitutor;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Util {
@@ -14,7 +15,7 @@ public class Util {
         try {
             new URL(uri);
             return true;
-        } catch (Exception e) {
+        } catch (MalformedURLException e) {
             return false;
         }
     }

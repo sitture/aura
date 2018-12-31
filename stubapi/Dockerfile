@@ -7,7 +7,7 @@ WORKDIR /home/wiremock
 
 ENV WIREMOCK_VERSION 2.18.0
 
-# update openssl && get wiremicj
+# update openssl && get wiremock standalone
 RUN apk add --update openssl \
   && mkdir -p /var/wiremock/lib/ \
   && wget https://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/$WIREMOCK_VERSION/wiremock-standalone-$WIREMOCK_VERSION.jar \

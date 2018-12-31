@@ -20,7 +20,7 @@ public class ApiSpec {
         System.out.println("Hello World!");
     }
 
-    @Step("request type is <requestType>")
+    @Step("request type is <GET|POST|DELETE>")
     public void request(RequestType requestType) {
         System.out.println(requestType);
     }
