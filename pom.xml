@@ -5,17 +5,20 @@
     <groupId>io.github.sitture</groupId>
     <artifactId>gauge-requests-top</artifactId>
     <packaging>pom</packaging>
+
     <version>${projectVersion}</version>
     <name>${project.artifactId}</name>
     <url>${project.artifactId}.github.io</url>
-    <description></description>
+    <description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
 
     <properties>
         <projectVersion>0.1.0</projectVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <gauge.java.version>0.6.8</gauge.java.version>
+        <gauge-java.version>[0.6.9,)</gauge-java.version>
+        <junit.version>4.12</junit.version>
+        <log4j.version>2.11.1</log4j.version>
     </properties>
 
     <modules>
@@ -23,19 +26,31 @@
         <module>requests-example</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.thoughtworks.gauge</groupId>
-            <artifactId>gauge-java</artifactId>
-            <version>${gauge.java.version}</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.thoughtworks.gauge</groupId>
+                <artifactId>gauge-java</artifactId>
+                <version>${gauge-java.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <licenses>
         <license>
