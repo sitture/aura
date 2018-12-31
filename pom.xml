@@ -6,7 +6,7 @@
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
 
-    <version>${projectVersion}</version>
+    <version>0.1.0</version>
     <name>${project.artifactId}</name>
     <url>${project.artifactId}.github.io</url>
     <description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
