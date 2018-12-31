@@ -21,13 +21,12 @@
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
-            <version>${gauge-java.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.github.sitture</groupId>
             <artifactId>gauge-requests</artifactId>
-            <version>${projectVersion}</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
 
