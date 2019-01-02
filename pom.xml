@@ -70,6 +70,8 @@
                     <configLocation>checkstyle.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
                     <linkXRef>false</linkXRef>
+                    <includeTestResources>true</includeTestResources>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
                 </configuration>
                 <executions>
                     <execution>
