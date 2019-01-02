@@ -16,4 +16,4 @@ services:
       - stubapi
     volumes:
       - '.:/usr/src/app'
-    command: mvn -q test -Denv=ci
+    command: mvn -q install -Denv=ci

@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>io.github.sitture</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-
     <version>0.1.0</version>
-    <name>${project.artifactId}</name>
+    <name>gauge-requests-${project.artifactId}</name>
     <url>${project.artifactId}.github.io</url>
     <description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
-
     <properties>
         <projectVersion>0.1.0</projectVersion>
         <gauge-java.version>[0.6.9,)</gauge-java.version>
@@ -19,13 +16,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <checkstyle.version>8.15</checkstyle.version>
+        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
     </properties>
-
     <modules>
         <module>requests</module>
         <module>requests-example</module>
     </modules>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -51,7 +48,35 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven-checkstyle-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>${checkstyle.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <failsOnError>true</failsOnError>
+                    <configLocation>checkstyle.xml</configLocation>
+                    <consoleOutput>true</consoleOutput>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>checkstyle</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -66,5 +91,4 @@
             <organization>Sitture</organization>
         </developer>
     </developers>
-
 </project>
