@@ -4,11 +4,11 @@ import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class RequestTypeTest {
+public class RequestMethodTest {
 
     @Test
     public void hasGET() {
-        Assert.assertThat(RequestType.GET, CoreMatchers.notNullValue());
+        Assert.assertThat(RequestMethod.GET, CoreMatchers.notNullValue());
     }
 
 }

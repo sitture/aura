@@ -5,7 +5,7 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
-import io.github.sitture.requests.RequestType;
+import io.github.sitture.requests.RequestMethod;
 import io.github.sitture.support.Util;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -20,9 +20,14 @@ public class ApiSpec {
         System.out.println("Hello World!");
     }
 
-    @Step("request type is <GET|POST|DELETE>")
-    public void request(RequestType requestType) {
-        System.out.println(requestType);
+    @Step("request type is <GET|POST|PUT|DELETE>")
+    public void request(RequestMethod requestMethod) {
+        System.out.println(requestMethod);
+        System.out.println(requestMethod.equals("GET"));
+        if (requestMethod.equals("GET")) {
+            String msg = "invalid";
+            throw new RuntimeException(msg);
+        }
     }
 
     @Step("print another <hello>")

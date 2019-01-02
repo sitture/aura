@@ -1,6 +1,5 @@
 package io.github.sitture.requests;
 
-public enum RequestType {
-
-    GET
+public enum RequestMethod {
+    GET, POST, PUT, DELETE
 }
