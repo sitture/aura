@@ -21,7 +21,7 @@ public class ApiSpec {
     }
 
     @Step("request type is <GET|POST|PUT|DELETE>")
-    public void request(RequestMethod requestMethod) {
+    public void request(final RequestMethod requestMethod) {
         System.out.println(requestMethod);
         System.out.println(requestMethod.equals("GET"));
         if (requestMethod.equals("GET")) {
@@ -31,7 +31,7 @@ public class ApiSpec {
     }
 
     @Step("print another <hello>")
-    public void printAnother(String hello) {
+    public void printAnother(final String hello) {
         try {
             // substitute env vars
             String url = Util.getEnvSubstitutedString(hello);
@@ -45,7 +45,7 @@ public class ApiSpec {
 
     static OkHttpClient client = new OkHttpClient();
 
-    private static String run(String url) throws IOException {
+    private static String run(final String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .get()

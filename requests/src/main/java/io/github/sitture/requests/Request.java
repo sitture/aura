@@ -10,7 +10,7 @@ public final class Request {
         return headers;
     }
 
-    public void setHeaders(List<String> headers) {
+    public void setHeaders(final List<String> headers) {
         this.headers = headers;
     }
 
@@ -18,7 +18,7 @@ public final class Request {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(final String url) {
         this.url = url;
     }
 

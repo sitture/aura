@@ -11,11 +11,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HttpRequest {
+public final class HttpRequest {
+
+    private HttpRequest() {
+
+    }
 
     static OkHttpClient client = new OkHttpClient();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(final String[] args) throws IOException {
         System.out.println(run("http://localhost:8080/mock/api"));
         io.github.sitture.requests.Request request = new io.github.sitture.requests.Request();
         request.setUrl("https://local");
@@ -26,7 +30,7 @@ public class HttpRequest {
         System.out.println(StringSubstitutor.replace("${PATH}", System.getenv()));
     }
 
-    private static String run(String url) throws IOException {
+    private static String run(final String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .get()
