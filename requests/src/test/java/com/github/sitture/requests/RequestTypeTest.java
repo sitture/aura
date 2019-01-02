@@ -1,4 +1,4 @@
-package io.github.sitture.requests;
+package com.github.sitture.requests;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;

@@ -1,9 +1,9 @@
-package io.github.sitture;
+package com.github.sitture;
 
+import com.github.sitture.requests.RequestType;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Step;
-import io.github.sitture.requests.RequestType;
 
 public class ApiSpec {
 

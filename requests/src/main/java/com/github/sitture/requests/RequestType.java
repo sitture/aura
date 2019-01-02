@@ -1,4 +1,4 @@
-package io.github.sitture.requests;
+package com.github.sitture.requests;
 
 public enum RequestType {
 
