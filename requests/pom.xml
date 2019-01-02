@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.sitture</groupId>
+        <groupId>com.github.sitture</groupId>
         <artifactId>gauge-requests-top</artifactId>
         <version>${projectVersion}</version>
         <relativePath>../</relativePath>
