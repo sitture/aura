@@ -8,6 +8,7 @@
         <relativePath>../</relativePath>
     </parent>
     <artifactId>gauge-requests-example</artifactId>
+    <name>${project.artifactId}</name>
     <packaging>jar</packaging>
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
