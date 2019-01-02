@@ -14,6 +14,13 @@ This is a simple library of **pre-defined steps** for running API Tests within a
 
 ## Standout Features
 
+
+## Dependencies
+
+* [Gauge](https://gauge.org/) and [Gauge-Java](https://github.com/getgauge/gauge-java/releases) Plugin for writing test cases in the business language.
+* [JsonPath](https://github.com/json-path/JsonPath) for traversal of JSON responses.
+* [okHttp](http://square.github.io/okhttp/) for http requests that's efficient by default.
+
 ### Contribute to Documentation
 
 Feel free to update this content, just click the **Edit this page** link displayed on top right of each page, and send a **pull request** of the changes.
