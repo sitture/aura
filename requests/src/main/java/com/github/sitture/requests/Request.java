@@ -1,4 +1,4 @@
-package io.github.sitture.requests;
+package com.github.sitture.requests;
 
 import java.util.List;
 

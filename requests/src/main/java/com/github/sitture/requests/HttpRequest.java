@@ -1,4 +1,4 @@
-package io.github.sitture.requests;
+package com.github.sitture.requests;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -21,7 +21,7 @@ public final class HttpRequest {
 
     public static void main(final String[] args) throws IOException {
         System.out.println(run("http://localhost:8080/mock/api"));
-        io.github.sitture.requests.Request request = new io.github.sitture.requests.Request();
+        com.github.sitture.requests.Request request = new com.github.sitture.requests.Request();
         request.setUrl("https://local");
         List<String> a = new ArrayList<>();
         a.add("haroon");

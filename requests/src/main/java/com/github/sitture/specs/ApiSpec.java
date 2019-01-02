@@ -1,12 +1,12 @@
-package io.github.sitture.specs;
+package com.github.sitture.specs;
 
 import com.google.gson.Gson;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
-import io.github.sitture.requests.RequestMethod;
-import io.github.sitture.support.Util;
+import com.github.sitture.requests.RequestMethod;
+import com.github.sitture.support.Util;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

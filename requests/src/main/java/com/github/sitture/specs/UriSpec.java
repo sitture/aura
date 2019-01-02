@@ -1,7 +1,7 @@
-package io.github.sitture.specs;
+package com.github.sitture.specs;
 
 import com.thoughtworks.gauge.Step;
-import io.github.sitture.support.Util;
+import com.github.sitture.support.Util;
 
 public class UriSpec {
 
