@@ -17,6 +17,7 @@
         <projectVersion>0.1.0</projectVersion>
         <gauge-java.version>[0.6.9,)</gauge-java.version>
         <junit.version>4.12</junit.version>
+        <system-rules.version>1.17.2</system-rules.version>
         <log4j.version>2.11.1</log4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -35,6 +36,12 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.stefanbirkner</groupId>
+                <artifactId>system-rules</artifactId>
+                <version>${system-rules.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>com.thoughtworks.gauge</groupId>

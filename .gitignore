@@ -9,6 +9,7 @@
 *.ear
 
 # IDE specific
+.apt_generated
 .idea
 .vscode
 *.iml
