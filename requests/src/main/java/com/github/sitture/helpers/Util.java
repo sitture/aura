@@ -1,4 +1,4 @@
-package com.github.sitture.support;
+package com.github.sitture.helpers;
 
 import org.apache.commons.text.StringSubstitutor;
 
