@@ -6,7 +6,7 @@
         <artifactId>oss-parent</artifactId>
         <version>9</version>
     </parent>
-    <groupId>io.github.sitture</groupId>
+    <groupId>com.github.sitture</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <version>0.1.0</version>
