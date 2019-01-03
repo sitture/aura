@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "gauge-requests.io"
+title = "gauge-requests"
 theme = "docs"
 metadataformat = "yaml"
 canonifyurls = true

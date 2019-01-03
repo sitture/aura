@@ -1,5 +1,5 @@
 ---
-title: "gauge-requests.io"
+title: "gauge-requests"
 type: index
 weight: 0
 ---
