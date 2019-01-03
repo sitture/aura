@@ -1,9 +1,13 @@
 package com.github.sitture.specs;
 
+import com.github.sitture.requests.RequestContext;
 import com.thoughtworks.gauge.Step;
-import com.github.sitture.support.Util;
+import com.github.sitture.helpers.Util;
 
-public class UriSpec {
+import java.util.ArrayList;
+import java.util.List;
+
+public class UriSpec extends HelperSpec {
 
     @Step({"set URI to <requestApi>", "set requests URI to <requestApi>"})
     public void setRequestApiUri(final String requestApi) {
@@ -15,7 +19,12 @@ public class UriSpec {
             return;
         }
         // TODO: Add url to the request object
-        System.out.println(uri);
+        getRequest().setUrl(uri);
+        List<String> s = new ArrayList<>();
+        s.add("s");
+        s.add("s2");
+        getRequest().setHeaders(s);
+        RequestContext.setRequest(getRequest());
     }
 
 }

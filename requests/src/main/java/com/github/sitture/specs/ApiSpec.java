@@ -6,14 +6,14 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import com.github.sitture.requests.RequestMethod;
-import com.github.sitture.support.Util;
+import com.github.sitture.helpers.Util;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
 import java.io.IOException;
 
-public class ApiSpec {
+public class ApiSpec extends HelperSpec {
 
     @Step("print hello world!")
     public void printHelloWorld() {
