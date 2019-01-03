@@ -20,6 +20,7 @@ This is a simple library of **pre-defined steps** for running API Tests within a
 * [Gauge](https://gauge.org/) and [Gauge-Java](https://github.com/getgauge/gauge-java/releases) Plugin for writing test cases in the business language.
 * [JsonPath](https://github.com/json-path/JsonPath) for traversal of JSON responses.
 * [okHttp](http://square.github.io/okhttp/) for http requests that's efficient by default.
+* [Hugo](https://gohugo.io/) for documentation.
 
 ### Contribute to Documentation
 
