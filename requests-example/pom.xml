@@ -35,7 +35,7 @@
                 <executions>
                     <execution>
                         <id>validate</id>
-                        <phase>validate</phase>
+                        <phase>test-compile</phase>
                         <configuration>
                             <specsDir>specs</specsDir>
                         </configuration>
