@@ -8,9 +8,13 @@ weight: 0
 
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
 
+>[Gauge](https://gauge.org) is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language.
+
+Learn more about [Getting started with Gauge](https://gauge.org/getting-started-guide/we-start/).
+
 ## What is gauge-requests?
 
-This is a simple library of **pre-defined steps** for running API Tests within a [Gauge-Java](https://github.com/getgauge/gauge-java) based project.
+A simple library of **pre-defined steps** for running API Tests within a [Gauge-Java](https://github.com/getgauge/gauge-java) based project without having to write any code.
 
 ## Standout Features
 
