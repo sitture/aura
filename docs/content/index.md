@@ -4,7 +4,7 @@ type: index
 weight: 0
 ---
 
-[![CircleCI](https://circleci.com/gh/sitture/aura.svg?style=shield)](https://circleci.com/gh/sitture/aura) [![Maintainability](https://api.codeclimate.com/v1/badges/b5cc25a0c4b0722a6c60/maintainability)](https://codeclimate.com/github/sitture/aura/maintainability) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?maxAge=2592000)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](../../issues)
+[![CircleCI](https://circleci.com/gh/sitture/aura.svg?style=shield)](https://circleci.com/gh/sitture/aura) [![Maintainability](https://api.codeclimate.com/v1/badges/b5cc25a0c4b0722a6c60/maintainability)](https://codeclimate.com/github/sitture/aura/maintainability) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?maxAge=2592000)](https://opensource.org/licenses/MIT) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/sitture/aura/issues)
 
 [![Gauge Badge](https://gauge.org/Gauge_Badge.svg)](https://gauge.org)
 
@@ -15,6 +15,11 @@ Learn more about [Getting started with Gauge](https://gauge.org/getting-started-
 ## What is gauge-requests?
 
 A simple library of **pre-defined steps** for running API Tests within a [Gauge-Java](https://github.com/getgauge/gauge-java) based project without having to write any code.
+
+## Who should use this library?
+
+* New Gauge users looking to test their API-based applications with clear & concisely described scenarios of http requests.
+* Existing Gauge users who are testing the front-end applications with Selenium (or similar) frameworks but would like to just verify the response of webpages without having to implement the step implementations.
 
 ## Standout Features
 
