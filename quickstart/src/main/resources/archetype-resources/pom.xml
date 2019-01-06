@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.github.sitture</groupId>
-        <artifactId>parent</artifactId>
-        <version>0.1.0</version>
-        <relativePath>../</relativePath>
-    </parent>
-    <artifactId>gauge-requests-example</artifactId>
-    <name>${project.artifactId}</name>
-    <packaging>jar</packaging>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <version>${version}</version>
     <properties>
-        <maven.deploy.skip>true</maven.deploy.skip>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gauge-java.version>0.6.9</gauge-java.version>
+        <gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
+        <gauge-requests.version>0.1.0</gauge-requests.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
             <groupId>com.thoughtworks.gauge</groupId>
             <artifactId>gauge-java</artifactId>
+            <version>${gauge-java.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.github.sitture</groupId>
             <artifactId>gauge-requests</artifactId>
-            <version>${project.version}</version>
+            <version>${gauge-requests.version}</version>
         </dependency>
     </dependencies>
     <build>

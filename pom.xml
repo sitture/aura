@@ -16,6 +16,7 @@
     <properties>
         <projectVersion>0.1.0</projectVersion>
         <gauge-java.version>[0.6.9,)</gauge-java.version>
+        <gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
         <junit.version>4.12</junit.version>
         <system-rules.version>1.17.2</system-rules.version>
         <log4j.version>2.11.1</log4j.version>
@@ -28,6 +29,7 @@
     </properties>
     <modules>
         <module>requests</module>
+        <module>quickstart</module>
         <module>requests-example</module>
     </modules>
     <dependencyManagement>
