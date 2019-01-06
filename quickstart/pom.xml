@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.github.sitture</groupId>
+        <artifactId>parent</artifactId>
+        <version>0.1.0</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <properties>
+        <archetype-packaging.version>3.0.1</archetype-packaging.version>
+        <archetype.test.ignoreEOLStyle>true</archetype.test.ignoreEOLStyle>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <artifactId>gauge-requests-quickstart</artifactId>
+    <name>${project.artifactId}</name>
+    <description>Archetype for Gauge Requests</description>
+    <url>http://github.com/sitture/gauge-requests</url>
+    <packaging>maven-archetype</packaging>
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>${archetype-packaging.version}</version>
+            </extension>
+        </extensions>
+    </build>
+</project>
