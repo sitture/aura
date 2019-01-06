@@ -29,7 +29,7 @@
     <modules>
         <module>requests</module>
         <module>quickstart</module>
-        <module>requests-example</module>
+        <module>examples</module>
     </modules>
     <dependencyManagement>
         <dependencies>
