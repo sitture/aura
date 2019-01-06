@@ -15,7 +15,6 @@
     </properties>
     <artifactId>gauge-requests-quickstart</artifactId>
     <name>${project.artifactId}</name>
-    <version>0.1.0</version>
     <description>Archetype for Gauge Requests</description>
     <url>http://github.com/sitture/gauge-requests</url>
     <packaging>maven-archetype</packaging>
