@@ -9,8 +9,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <gauge-java.version>0.6.9</gauge-java.version>
-        <gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
         <gauge-requests.version>0.1.0</gauge-requests.version>
+        <gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
