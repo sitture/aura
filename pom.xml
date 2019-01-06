@@ -25,6 +25,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <checkstyle.version>8.15</checkstyle.version>
         <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+        <skipTests>false</skipTests>
+        <archetype-packaging.version>3.0.1</archetype-packaging.version>
+        <archetype.test.ignoreEOLStyle>true</archetype.test.ignoreEOLStyle>
     </properties>
     <modules>
         <module>requests</module>
