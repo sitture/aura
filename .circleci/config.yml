@@ -8,11 +8,14 @@ jobs:
       - run:
           name: Build Images
           command: |
-            docker-compose -f docker-compose-ci.yml build- run:
+            docker-compose -f docker-compose-ci.yml build
+      - run:
+          name: Update project versions
+          command: |
+            .circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
+      - run:
           name: Build project
           command: |
-            # update project versions
-            .circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
             docker-compose -f docker-compose-ci.yml run requests
       - run:
           name: Shut Down Images

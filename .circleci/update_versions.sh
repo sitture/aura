@@ -13,14 +13,16 @@ mvn versions:set \
     -DprocessAllModules=true \
     -DprocessDependencies=true
 echo "Setting archetype dependency newVersion to '$1' ..."
-mvn versions:set-property \
+mvn -f ./quickstart/src/main/resources/archetype-resources/ \
+    versions:set-property \
     -Dproperty=gauge-requests.version \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false \
     -DgroupId=com.sitture.github \
     -DartifactId=gauge-requests-basic \
     -Dversion=0.3.0
-mvn versions:set-property \
+mvn -f ./quickstart/src/test/resources/projects/basic/reference/ \
+    versions:set-property \
     -Dproperty=gauge-requests.version \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false
