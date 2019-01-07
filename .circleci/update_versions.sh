@@ -20,7 +20,7 @@ mvn -f ./quickstart/src/main/resources/archetype-resources/ \
     -DgenerateBackupPoms=false \
     -DgroupId=com.sitture.github \
     -DartifactId=gauge-requests-basic \
-    -Dversion=0.3.0
+    -Dversion=$1
 mvn -f ./quickstart/src/test/resources/projects/basic/reference/ \
     versions:set-property \
     -Dproperty=gauge-requests.version \
