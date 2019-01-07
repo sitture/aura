@@ -7,22 +7,20 @@ if [[ -z "$1" ]]; then
 fi
 
 echo "Setting newVersion to '$1' ..."
-mvn -f ../ versions:set \
+mvn versions:set \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false \
     -DprocessAllModules=true \
     -DprocessDependencies=true
 echo "Setting archetype dependency newVersion to '$1' ..."
-mvn -f ../quickstart/src/main/resources/archetype-resources/ \
-    versions:set-property \
+mvn versions:set-property \
     -Dproperty=gauge-requests.version \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false \
     -DgroupId=com.sitture.github \
     -DartifactId=gauge-requests-basic \
     -Dversion=0.3.0
-mvn -f ../quickstart/src/test/resources/projects/basic/reference/ \
-    versions:set-property \
+mvn versions:set-property \
     -Dproperty=gauge-requests.version \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false
