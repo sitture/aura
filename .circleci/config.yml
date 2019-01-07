@@ -10,6 +10,10 @@ jobs:
           command: |
             docker-compose -f docker-compose-ci.yml build
       - run:
+          name: Update project versions
+          command: |
+            ./circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
+      - run:
           name: Build project
           command: |
             docker-compose -f docker-compose-ci.yml run requests
