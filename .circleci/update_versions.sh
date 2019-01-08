@@ -19,7 +19,7 @@ mvn -f ./quickstart/src/main/resources/archetype-resources/ \
     -DnewVersion=$1 \
     -DgenerateBackupPoms=false \
     -DgroupId=com.sitture.github \
-    -DartifactId=gauge-requests-basic \
+    -DartifactId=gauge-requests-reference \
     -Dversion=$1
 mvn -f ./quickstart/src/test/resources/projects/basic/reference/ \
     versions:set-property \
