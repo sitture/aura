@@ -17,7 +17,7 @@ jobs:
             .circleci/setup_stub_mappings.sh
       - run:
           name: Build Project
-          command: mvn -B install -Denv=ci
+          command: mvn -B install
       - save_cache:
           paths:
             - ~/.m2
