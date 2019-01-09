@@ -10,18 +10,14 @@ jobs:
       - restore_cache:
           key: gauge-requests-{{ checksum "pom.xml" }}
       - run:
-          name: Update project versions
+          name: Update project versions and Setup Mappings
           command: |
             .circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
+            # setup stub mappings
+            .circleci/setup_stub_mappings.sh
       - run:
           name: Build Project
           command: mvn -B install -Denv=ci
-      - run: |
-          curl -X POST \
-          --data '{ "request": { "url": "/get/this", "method": "GET" }, "response": { "status": 200, "body": "Here it is!\n" }}' \
-          http://localhost:8080/__admin/mappings/new
-
-      - run: curl http://localhost:8080/get/this
       - save_cache:
           paths:
             - ~/.m2
