@@ -1,26 +1,28 @@
 version: 2
 jobs:
   build:
-    machine:
-      docker_layer_caching: true
+    working_directory: ~/gauge-requests
+    docker:
+      - image: sitture/docker-gauge-java
+      - image: rodolpheche/wiremock
     steps:
       - checkout
+      - restore_cache:
+          key: gauge-requests-{{ checksum "pom.xml" }}
       - run:
-          name: Build Images
-          command: |
-            docker-compose -f docker-compose-ci.yml build
-      - run:
-          name: Update project versions
+          name: Update project versions and Setup Mappings
           command: |
             .circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
+            # setup stub mappings
+            .circleci/setup_stub_mappings.sh
       - run:
-          name: Build project
-          command: |
-            docker-compose -f docker-compose-ci.yml run requests
-      - run:
-          name: Shut Down Images
-          command: docker-compose -f docker-compose-ci.yml down -v --remove-orphans
-          when: always
+          name: Build Project
+          command: mvn -B install
+      - save_cache:
+          paths:
+            - ~/.m2
+            - /root/.m2
+          key: gauge-requests-{{ checksum "pom.xml" }}
 
 workflows:
   version: 2
