@@ -8,7 +8,7 @@
 		<version>0.1.0</version>
 		<relativePath>../</relativePath>
 	</parent>
-	<artifactId>gauge-requests-examples</artifactId>
+	<artifactId>gauge-requests-reference</artifactId>
 	<name>${project.artifactId}</name>
 	<packaging>jar</packaging>
 	<properties>

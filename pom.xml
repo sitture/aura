@@ -33,7 +33,7 @@
 	<modules>
 		<module>requests</module>
 		<module>quickstart</module>
-		<module>examples</module>
+		<module>reference</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
