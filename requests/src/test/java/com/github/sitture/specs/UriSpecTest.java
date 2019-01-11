@@ -12,7 +12,7 @@ public class UriSpecTest {
 
     @Test
     public void testCanGetURI() throws IOException {
-        final String uri = "http://exampleuri.io";
+        final String uri = "http://test.io";
         uriSpec.setRequestApiUri(uri);
         Assert.assertEquals(uri, RequestContext.getRequest().getUrl());
     }
