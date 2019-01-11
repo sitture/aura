@@ -1,15 +1,10 @@
 package com.github.sitture.requests;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import org.apache.commons.text.StringSubstitutor;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public final class HttpRequest {
 
@@ -20,7 +15,7 @@ public final class HttpRequest {
 
     }
 
-    public HttpRequest(ApiRequest request) {
+    public HttpRequest(final ApiRequest request) {
         this.request = request;
     }
 
