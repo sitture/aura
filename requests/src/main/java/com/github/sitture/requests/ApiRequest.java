@@ -2,9 +2,9 @@ package com.github.sitture.requests;
 
 import java.util.List;
 
-public final class Request {
+public final class ApiRequest {
 
-    String url;
+    private String url;
 
     public List<String> getHeaders() {
         return headers;
@@ -22,6 +22,6 @@ public final class Request {
         this.url = url;
     }
 
-    List<String> headers;
+    private List<String> headers;
 
 }
