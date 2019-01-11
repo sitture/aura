@@ -9,7 +9,7 @@ To execute this specification, run
 
 
 * Vowels in English language are "aeiou".
-* set URI to "${BASE_URL}"
+* set URI to "${BASE_URL}/get/helloworld"
 
 Vowel counts in single word
 ---------------------------

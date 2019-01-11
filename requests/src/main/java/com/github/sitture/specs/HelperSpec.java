@@ -1,16 +1,16 @@
 package com.github.sitture.specs;
 
-import com.github.sitture.requests.Request;
+import com.github.sitture.requests.ApiRequest;
 
 abstract class HelperSpec {
 
-    private Request request;
+    private ApiRequest request;
 
     HelperSpec() {
-        this.request = new Request();
+        this.request = new ApiRequest();
     }
 
-    protected Request getRequest() {
+    protected ApiRequest getRequest() {
         return request;
     }
 

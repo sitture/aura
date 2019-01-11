@@ -17,13 +17,13 @@ public class ApiSpec extends HelperSpec {
 
     @Step("print hello world!")
     public void printHelloWorld() {
-        System.out.println("Hello World!");
+        //System.out.println("Hello World!");
     }
 
     @Step("request type is <GET|POST|PUT|DELETE>")
     public void request(final RequestMethod requestMethod) {
-        System.out.println(requestMethod);
-        System.out.println(requestMethod.equals("GET"));
+        //System.out.println(requestMethod);
+        //System.out.println(requestMethod.equals("GET"));
         if (requestMethod.equals("GET")) {
             String msg = "invalid";
             throw new RuntimeException(msg);

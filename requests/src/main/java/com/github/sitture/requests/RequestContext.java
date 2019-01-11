@@ -5,13 +5,13 @@ public final class RequestContext {
     private RequestContext() {
     }
 
-    private static Request request;
+    private static ApiRequest request;
 
-    public static void setRequest(final Request request) {
+    public static void setRequest(final ApiRequest request) {
         RequestContext.request = request;
     }
 
-    public static Request getRequest() {
+    public static ApiRequest getRequest() {
         return request;
     }
 

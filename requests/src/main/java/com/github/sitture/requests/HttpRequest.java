@@ -13,32 +13,31 @@ import java.util.List;
 
 public final class HttpRequest {
 
+    ApiRequest request;
+
+
     private HttpRequest() {
 
     }
 
-    static OkHttpClient client = new OkHttpClient();
-
-    public static void main(final String[] args) throws IOException {
-        System.out.println(run("http://localhost:8080/mock/api"));
-        com.github.sitture.requests.Request request = new com.github.sitture.requests.Request();
-        request.setUrl("https://local");
-        List<String> a = new ArrayList<>();
-        a.add("haroon");
-        request.setHeaders(a);
-        System.out.println(new Gson().toJson(request));
-        System.out.println(StringSubstitutor.replace("${PATH}", System.getenv()));
+    public HttpRequest(ApiRequest request) {
+        this.request = request;
     }
 
-    private static String run(final String url) throws IOException {
+    static OkHttpClient client = new OkHttpClient();
+
+    public void execute() throws IOException {
+        run(request.getUrl()).headers().names();
+    }
+
+    private Response run(final String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .get()
                 .addHeader("X-haroon", "X-Sheikh")
                 .build();
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(request));
         Response response = client.newCall(request).execute();
-        return response.body().string();
+        return response;
     }
 
 }
