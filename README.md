@@ -24,17 +24,17 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 ```sh
 gauge-requests/
 ├── .cirlceci
-│   ├── config.yml 				# CI Build script for project.
-│   ├── update_versions.sh 		# Updates project/dependency versions.
+│   ├── config.yml # CI Build script for project.
+│   ├── update_versions.sh # Updates project/dependency versions.
 │   └── set_stub_mappings.sh
 ├── docs
-├── quickstart 					# A maven archetype project.
-├── reference 					# An examples project using requests module.
-├── requests 					# Main gauge-requests module.
+├── quickstart # A maven archetype project.
+├── reference # An examples project using requests module.
+├── requests # Main gauge-requests module.
 ├── stubapi
-│   └── mappings/ 				# contains all the stubbed mappings.
+│   └── mappings/ # contains all the stubbed mappings.
 ├── checkstyle.xml
-└── pom.xml 					# parent pom to build the modules.
+└── pom.xml # parent pom to build the modules.
 ```
 
 ### Stub API
@@ -59,9 +59,9 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Code of Conduct
 
-This project follows the __Contributor Covenant__ [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+This project follows the Contributor Covenant [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
-This work is licensed under a [MIT](https://mit-license.org/) License.
+This work is licensed under a [__MIT__](https://mit-license.org/) License.
 
