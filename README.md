@@ -30,7 +30,7 @@ gauge-requests/
 ├── docs
 ├── quickstart # A maven archetype project.
 ├── reference # An examples project using requests module.
-├── requests
+├── requests # Main gauge-requests module.
 ├── stubapi
 │   └── mappings/ # contains all the stubbed mappings.
 ├── checkstyle.xml
