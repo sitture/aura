@@ -59,11 +59,9 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Code of Conduct
 
-This project follows the [Contributor Covenant][homepage] [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
-[homepage]: https://www.contributor-covenant.org
+This project follows the __Contributor Covenant__ [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## License
 
-This would is licensed under a [MIT](https://mit-license.org/) License.
+This work is licensed under a [MIT](https://mit-license.org/) License.
 
