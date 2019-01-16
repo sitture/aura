@@ -56,3 +56,14 @@ Please [open an issue here](../../issues) on GitHub if you have a problem, sugge
 Pull requests are welcome and encouraged! Any contributions should include new or updated unit tests as necessary to maintain thorough test coverage.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+## Code of Conduct
+
+This project follows the [Contributor Covenant][homepage] [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+[homepage]: https://www.contributor-covenant.org
+
+## License
+
+This would is licensed under a [MIT](https://mit-license.org/) License.
+
