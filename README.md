@@ -23,10 +23,12 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ```bash
 gauge-requests/
-├── .cirlceci
-│   ├── config.yml # CI Build script for project.
+├── .cirlceci # CI Build scripts for project.
+├── build
 │   ├── update_versions.sh # Updates project/dependency versions.
-│   └── set_stub_mappings.sh
+│   ├── set_stub_mappings.sh
+│   ├── local.yml # docker-compose file for build full project.
+│   └── stub.yml # docker-compose file for stub api.
 ├── docs
 ├── quickstart # A maven archetype project.
 ├── reference # An examples project using requests module.
