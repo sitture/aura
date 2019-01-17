@@ -12,9 +12,9 @@ jobs:
       - run:
           name: Update project versions and Setup Mappings
           command: |
-            .circleci/update_versions.sh ${CIRCLE_BUILD_NUM}
+            build/update_versions.sh ${CIRCLE_BUILD_NUM}
             # setup stub mappings
-            .circleci/setup_stub_mappings.sh
+            build/setup_stub_mappings.sh
       - run:
           name: Build Project
           command: mvn -B install
