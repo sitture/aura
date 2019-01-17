@@ -21,6 +21,7 @@
 .gauge
 logs/
 reports/
+html-report/
 
 .metadata
 bin/

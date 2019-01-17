@@ -17,9 +17,9 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * TODO
 
-## Running Locally
+## Building Project
 
-### Project Structure
+### Structure
 
 ```sh
 gauge-requests/
@@ -41,19 +41,38 @@ gauge-requests/
 
 The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
 
-```bash
-docker-compose -f docker-compose-stubapi.yml up -d
+```sh
+docker-compose -f build/stubapi.yml up -d
 ```
 
 The stub api will then be accessible at `http://127.0.0.1:8080`
 
 ## Running the Tests
 
+if you're running the tests locally:
+
+```sh
+mvn clean test
+```
+
+To test a specific module of the project:
+
+```sh
+cd requests
+mvn clean test
+```
+
+The __recommended__ option to build the complete project is using docker containers:
+
+```sh
+docker-compose -f build/local.yml up
+```
+
 ## Issues & Contributions
 
-Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comment.
+Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comments.
 
-Pull requests are welcome and encouraged! Any contributions should include new or updated unit tests as necessary to maintain thorough test coverage.
+Pull requests are welcome and encouraged! Any contributions should include new or updated unit/integration tests as necessary to maintain thorough test coverage.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 

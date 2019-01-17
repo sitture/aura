@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  api:
+    build: ../stubapi
+    restart: always
+    container_name: stubapi
+    ports:
+      - '8080:8080'
+      - '8443:8080'
+    volumes:
+      - '../stubapi/__files:/home/wiremock/__files'
+      - '../stubapi/mappings:/home/wiremock/mappings'
