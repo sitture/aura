@@ -47,7 +47,7 @@ docker-compose -f build/stub.yml up -d
 
 The stub api will then be accessible at `http://127.0.0.1:8080`
 
-## Running the Tests
+### Running the Tests
 
 The project can be built using any of the standard Maven life-cycles. Jar files can be found in the `target` directory of the module.
 
