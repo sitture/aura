@@ -17,35 +17,73 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 * TODO
 
-## Running Locally
+## Building Project
+
+### Structure
+
+```bash
+gauge-requests/
+├── .cirlceci
+│   ├── config.yml # CI Build script for project.
+│   ├── update_versions.sh # Updates project/dependency versions.
+│   └── set_stub_mappings.sh
+├── docs
+├── quickstart # A maven archetype project.
+├── reference # An examples project using requests module.
+├── requests # Main gauge-requests module.
+├── stub # A wiremock stubbed api for testing.
+│   └── mappings/ # contains all the stubbed mappings.
+├── checkstyle.xml
+└── pom.xml # parent pom to build the modules.
+```
 
 ### Stub API
 
 The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
 
 ```bash
-docker-compose -f docker-compose-stubapi.yml up -d
+docker-compose -f build/stub.yml up -d
 ```
 
 The stub api will then be accessible at `http://127.0.0.1:8080`
 
-## Running the Tests
+### Running the Tests
+
+The project can be built using any of the standard Maven life-cycles. Jar files can be found in the `target` directory of the module.
+
+```bash
+mvn clean # cleans your current environment.
+mvn compile # compiles all modules.
+mvn test # compiles all source, runs unit tests for all modules.
+mvn verify # same as `mvn test` but will also run integration tests from quickstart module.
+```
+
+To test a specific module of the project:
+
+```bash
+cd requests # change into the module's directory
+mvn clean test
+```
+
+The __recommended__ option to build the complete project is using docker containers:
+
+```bash
+docker-compose -f build/local.yml up # brings up the stub and gauge containers to build the project.
+```
 
 ## Issues & Contributions
 
-Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comment.
+Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comments.
 
-Pull requests are welcome and encouraged! Any contributions should include new or updated unit tests as necessary to maintain thorough test coverage.
+Pull requests are welcome and encouraged! Any contributions should include new or updated unit/integration tests as necessary to maintain thorough test coverage.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Code of Conduct
 
-This project follows the [Contributor Covenant][homepage] [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
-[homepage]: https://www.contributor-covenant.org
+This project follows the Contributor Covenant [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
-This would is licensed under a [MIT](https://mit-license.org/) License.
+This work is licensed under a [__MIT__](https://mit-license.org/) License.
 

@@ -9,15 +9,19 @@
 *.ear
 
 # IDE specific
+.apt_generated
 .idea
+.vscode
 *.iml
 .classpath
 .project
+.factorypath
 
 # Gauge Specific
 .gauge
 logs/
 reports/
+html-report/
 
 .metadata
 bin/

@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  stub:
+    build: ../stub
+    container_name: requests-stub
+    ports:
+      - '8080:8080'
+      - '8443:8080'
+    volumes:
+      - '../stub/__files:/home/wiremock/__files'
+      - '../stub/mappings:/home/wiremock/mappings'
+
+  requests:
+    image: sitture/docker-gauge-java
+    container_name: requests
+    depends_on:
+      - stub
+    volumes:
+      - '../:/usr/src/app'
+      - '/Users/${USER}/.m2:/root/.m2'
+    command: mvn clean install -Denv=local
