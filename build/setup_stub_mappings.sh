@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-stub_directory="stubapi"
+stub_directory="stub"
 stub_api="http://localhost:8080/__admin/mappings/new"
 
 # check if stub Directory exists

@@ -31,7 +31,7 @@ gauge-requests/
 ├── quickstart # A maven archetype project.
 ├── reference # An examples project using requests module.
 ├── requests # Main gauge-requests module.
-├── stubapi
+├── stub # A wiremock stubbed api for testing.
 │   └── mappings/ # contains all the stubbed mappings.
 ├── checkstyle.xml
 └── pom.xml # parent pom to build the modules.
@@ -42,7 +42,7 @@ gauge-requests/
 The project uses a stub api for testing the specifications. Bring up the container using `docker-compose`:
 
 ```sh
-docker-compose -f build/stubapi.yml up -d
+docker-compose -f build/stub.yml up -d
 ```
 
 The stub api will then be accessible at `http://127.0.0.1:8080`

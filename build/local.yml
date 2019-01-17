@@ -1,20 +1,20 @@
 version: '3.2'
 services:
-  stubapi:
-    build: ../stubapi
-    container_name: stubapi
+  stub:
+    build: ../stub
+    container_name: requests-stub
     ports:
       - '8080:8080'
       - '8443:8080'
     volumes:
-      - '../stubapi/__files:/home/wiremock/__files'
-      - '../stubapi/mappings:/home/wiremock/mappings'
+      - '../stub/__files:/home/wiremock/__files'
+      - '../stub/mappings:/home/wiremock/mappings'
 
   requests:
     image: sitture/docker-gauge-java
     container_name: requests
     depends_on:
-      - stubapi
+      - stub
     volumes:
       - '../:/usr/src/app'
       - '/Users/${USER}/.m2:/root/.m2'
