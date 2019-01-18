@@ -81,6 +81,8 @@ The docs are written using [Hugo](https://gohugo.io) and deployed to Github page
 docker-compose -f build/docs.yml up -d
 ```
 
+The docs should then be available at `http://127.0.0.1:1313`.
+
 ## Issues & Contributions
 
 Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comments.
