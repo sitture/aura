@@ -64,6 +64,10 @@ googleAnalytics = ""
 	url    = "roadmap/"
 	weight = 30
 
+[[menu.main]]
+	name   = "Changelog"
+	url    = "https://github.com/sitture/aura/blob/master/CHANGELOG.md"
+	weight = 40
 
 [blackfriday]
 	smartypants	= true
