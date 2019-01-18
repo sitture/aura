@@ -9,15 +9,17 @@ All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.m
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## Standout Features
+:notebook: [Documentation](https://gauge-requests.github.io) | :rocket: [Getting started](#rocket-getting-started) | :scroll: [License](#scroll-license)
+
+## :boom: Standout Features
 
 * TODO
 
-## Usage
+## :rocket: Getting started
 
 * TODO
 
-## Building Project
+## :hammer_and_pick: Building Project
 
 ### Structure
 
@@ -73,7 +75,7 @@ The __recommended__ option to build the complete project is using docker contain
 docker-compose -f build/local.yml up # brings up the stub and gauge containers to build the project.
 ```
 
-### Documentation
+### :notebook: Documentation
 
 The docs are written using [Hugo](https://gohugo.io) and deployed to Github pages from the `docs` directory. Run the following to bring up the docs server using docker:
 
@@ -91,11 +93,10 @@ Pull requests are welcome and encouraged! Any contributions should include new o
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
-## Code of Conduct
+## :office: Code of Conduct
 
 This project follows the Contributor Covenant [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## License
+## :scroll: License
 
 This work is licensed under a [__MIT__](https://mit-license.org/) License.
-
