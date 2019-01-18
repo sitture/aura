@@ -9,7 +9,7 @@ All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.m
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-:notebook: [Documentation](https://gauge-requests.github.io) | :rocket: [Getting started](#rocket-getting-started) | :scroll: [License](#scroll-license)
+:notebook: [Documentation](https://gauge-requests.github.io) | :rocket: [Getting started](#rocket-getting-started) | :wave: [Contributions](#wave-issues--contributions) :scroll: [License](#scroll-license)
 
 ## :boom: Standout Features
 
@@ -85,7 +85,7 @@ docker-compose -f build/docs.yml up -d
 
 The docs should then be available at `http://127.0.0.1:1313`.
 
-## Issues & Contributions
+## :wave: Issues & Contributions
 
 Please [open an issue here](../../issues) on GitHub if you have a problem, suggestion, or other comments.
 
