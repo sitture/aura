@@ -55,22 +55,13 @@ googleAnalytics = ""
 	weight = 10
 
 [[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
-	weight = 20
-
-[[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
-
-[[menu.main]]
 	name   = "Changelog"
 	url    = "https://github.com/sitture/aura/blob/master/CHANGELOG.md"
-	weight = 40
+	weight = 20
 
 [blackfriday]
 	smartypants	= true
 	fractions = true
 	smartDashes = true
 	plainIDAnchors = true
+	hrefTargetBlank = true
