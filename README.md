@@ -9,7 +9,11 @@ All notable changes to this project are documented in [CHANGELOG.md](CHANGELOG.m
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-:notebook: [Documentation](https://gauge-requests.github.io) | :rocket: [Getting started](#rocket-getting-started) | :wave: [Contributions](#wave-issues--contributions) :scroll: [License](#scroll-license)
+:book: [Documentation](https://gauge-requests.github.io)
+:rocket: [Getting started](#rocket-getting-started)
+:wave: [Contributions](#wave-issues--contributions)
+:sparkles: [Changelog][CHANGELOG.md]
+:scroll: [License](#scroll-license)
 
 ## :boom: Standout Features
 
@@ -75,7 +79,7 @@ The __recommended__ option to build the complete project is using docker contain
 docker-compose -f build/local.yml up # brings up the stub and gauge containers to build the project.
 ```
 
-### :notebook: Documentation
+### :book: Documentation
 
 The docs are written using [Hugo](https://gohugo.io) and deployed to Github pages from the `docs` directory. Run the following to bring up the docs server using docker:
 
