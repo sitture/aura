@@ -1,0 +1,11 @@
+version: '3'
+services:
+  docs:
+    image: cibuilds/hugo
+    container_name: requests-docs
+    ports:
+      - '1313:1313'
+    working_dir: /usr/src/docs
+    volumes:
+      - '../docs:/usr/src/docs'
+    command: hugo serve --bind=0.0.0.0
