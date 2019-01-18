@@ -41,3 +41,6 @@ output/
 extent-report/
 hugo-material-docs/
 .DS_Store
+
+# Hugo
+docs/public
