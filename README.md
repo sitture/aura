@@ -12,7 +12,7 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 :book: [Documentation](https://gauge-requests.github.io)
 :rocket: [Getting started](#rocket-getting-started)
 :wave: [Contributions](#wave-issues--contributions)
-:sparkles: [Changelog][CHANGELOG.md]
+:sparkles: [Changelog](CHANGELOG.md)
 :scroll: [License](#scroll-license)
 
 ## :boom: Standout Features
