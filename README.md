@@ -79,7 +79,7 @@ The __recommended__ option to build the complete project is using docker contain
 docker-compose -f build/local.yml up # brings up the stub and gauge containers to build the project.
 ```
 
-### :book: Documentation
+## :book: Documentation
 
 The docs are written using [Hugo](https://gohugo.io) and deployed to Github pages from the `docs` directory. Run the following to bring up the docs server using docker:
 
