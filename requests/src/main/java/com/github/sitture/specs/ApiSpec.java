@@ -1,12 +1,12 @@
 package com.github.sitture.specs;
 
+import com.github.sitture.helpers.UriHelper;
 import com.google.gson.Gson;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.thoughtworks.gauge.Gauge;
 import com.thoughtworks.gauge.Step;
 import com.github.sitture.requests.RequestMethod;
-import com.github.sitture.helpers.Util;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -34,7 +34,7 @@ public class ApiSpec extends HelperSpec {
     public void printAnother(final String hello) {
         try {
             // substitute env vars
-            String url = Util.getEnvSubstitutedString(hello);
+            String url = UriHelper.getEnvSubstitutedString(hello);
             // TODO: check if valid url, else throw an exception
             // TODO: Add url to the request object
             System.out.println(Unirest.get(url + "/get/helloworld").asJson().getBody());
