@@ -29,17 +29,17 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ```bash
 gauge-requests/
-├── .cirlceci # CI Build scripts for project.
-├── build
+├── .cirlceci/ # CI Build scripts for project.
+├── build/
 │   ├── update_versions.sh # Updates project/dependency versions.
 │   ├── set_stub_mappings.sh
 │   ├── local.yml # docker-compose file for build full project.
 │   └── stub.yml # docker-compose file for stub api.
-├── docs
-├── quickstart # A maven archetype project.
-├── reference # An examples project using requests module.
-├── requests # Main gauge-requests module.
-├── stub # A wiremock stubbed api for testing.
+├── docs/
+├── quickstart/ # A maven archetype project.
+├── reference/ # An examples project using requests module.
+├── requests/ # Main gauge-requests module.
+├── stub/ # A wiremock stubbed api for testing.
 │   └── mappings/ # contains all the stubbed mappings.
 ├── checkstyle.xml
 └── pom.xml # parent pom to build the modules.
