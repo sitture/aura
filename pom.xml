@@ -15,7 +15,7 @@
 	<url>${project.artifactId}.github.io</url>
 	<description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
 	<properties>
-		<gauge-java.version>[0.6.9,)</gauge-java.version>
+		<gauge-java.version>0.7.1</gauge-java.version>
 		<gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
 		<junit.version>4.12</junit.version>
 		<system-rules.version>1.17.2</system-rules.version>

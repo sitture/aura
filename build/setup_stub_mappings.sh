@@ -13,5 +13,6 @@ mappings=$(find $stub_directory -name "*.json" -type f)
 
 for mapping in $mappings ; do
     echo "$mapping"
-    curl -i -X POST --data @$mapping $stub_api
+    curl --retry 3 --retry-delay 0 --retry-max-time 30 \
+        -i -X POST --data @$mapping $stub_api
 done
