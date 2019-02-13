@@ -12,13 +12,16 @@ If you have any support related questions, please refer our documentation.
 Please delete irrelevant sections below.
 -->
 ### Summary
-*A brief summary of the bug*
+
+*A brief summary of the issue.*
 
 ### Expected
-*Tell us what should happen*
+
+*Tell us what should happen.*
 
 ### Actual
-*Tell us what happens instead*
+
+*Tell us what happens instead.*
 
 ### Steps to reproduce
 1.
