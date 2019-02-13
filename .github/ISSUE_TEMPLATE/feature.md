@@ -5,14 +5,11 @@ labels: 'new feature'
 projects: 'sitture'
 ---
 
-### Summary of the Feature Request
+### Summary
 
 
-### Is your feature request related to a problem? Please describe.
+__Is your feature request related to a problem? If yes, please describe or add a link to an issue__
 <!-- A clear and concise description of what the problem is. -->
 
-### Describe the solution you'd like
+__Describe the solution you'd like__
 <!-- A clear and concise description of what you want to happen. -->
-
-### Additional context
-<!-- Add any other context or screenshots about the feature request here. -->
