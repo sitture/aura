@@ -12,7 +12,7 @@ If you have any support related questions, please refer our documentation.
 Please delete irrelevant sections below.
 -->
 ### Summary
-
+A brief summary of the bug ...
 
 ### Expected behaviour
 <!-- Tell us what should happen -->
