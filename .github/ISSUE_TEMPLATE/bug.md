@@ -12,13 +12,13 @@ If you have any support related questions, please refer our documentation.
 Please delete irrelevant sections below.
 -->
 ### Summary
-A brief summary of the bug ...
+*A brief summary of the bug*
 
-### Expected behaviour
-<!-- Tell us what should happen -->
+### Expected
+*Tell us what should happen*
 
-### Actual behaviour
-<!-- Tell us what happens instead -->
+### Actual
+*Tell us what happens instead*
 
 ### Steps to reproduce
 1.
