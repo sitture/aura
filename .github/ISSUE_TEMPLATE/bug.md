@@ -1,3 +1,9 @@
+---
+name: Bug
+about: Create a report to help us improve
+labels: 'triage'
+projects: 'sitture'
+---
 <!--
 Thanks a lot for reporting issues! This is the issue tracker for reporting bugs or for requesting new feature and enhancements.
 
@@ -17,5 +23,11 @@ Please delete irrelevant sections below.
 2.
 3.
 
-### Version
-
+### Versions
+<!-- Version of gauge and gauge-requests -->
+```
+gauge =
+gauge-java =
+gauge-requests =
+jdk =
+```
