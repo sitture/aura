@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Create a report to help us improve
-labels: 'new feature'
+labels: 'new feature, triage'
 projects: 'sitture'
 ---
 
