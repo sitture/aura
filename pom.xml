@@ -8,10 +8,10 @@
 		<version>9</version>
 	</parent>
 	<groupId>com.github.sitture</groupId>
-	<artifactId>parent</artifactId>
+	<artifactId>gauge-requests-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>0.1.0</version>
-	<name>gauge-requests-${project.artifactId}</name>
+	<name>${project.artifactId}</name>
 	<url>${project.artifactId}.github.io</url>
 	<description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
 	<properties>

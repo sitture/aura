@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.github.sitture</groupId>
-		<artifactId>parent</artifactId>
+		<artifactId>gauge-requests-parent</artifactId>
 		<version>0.1.0</version>
 		<relativePath>../</relativePath>
 	</parent>
