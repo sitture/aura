@@ -8,10 +8,10 @@
 		<version>9</version>
 	</parent>
 	<groupId>com.github.sitture</groupId>
-	<artifactId>parent</artifactId>
+	<artifactId>gauge-requests-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>0.1.0</version>
-	<name>gauge-requests-${project.artifactId}</name>
+	<name>${project.artifactId}</name>
 	<url>${project.artifactId}.github.io</url>
 	<description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
 	<properties>
@@ -24,7 +24,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<checkstyle.version>8.15</checkstyle.version>
+		<checkstyle.version>8.18</checkstyle.version>
 		<maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
 		<skipTests>false</skipTests>
 		<archetype-packaging.version>3.0.1</archetype-packaging.version>

@@ -5,7 +5,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.EnvironmentVariables;
 
-public class UtilTest {
+public class UriHelperTest {
 
     @Rule
     public final EnvironmentVariables environmentVariables = new EnvironmentVariables();
@@ -13,6 +13,6 @@ public class UtilTest {
     @Test
     public void testEnvVariablesSubstituted() {
         environmentVariables.set("myVariable", "myValue");
-        Assert.assertEquals("myValue", Util.getEnvSubstitutedString("${myVariable}"));
+        Assert.assertEquals("myValue", UriHelper.getEnvSubstitutedString("${myVariable}"));
     }
 }

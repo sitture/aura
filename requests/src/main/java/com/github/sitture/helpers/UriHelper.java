@@ -5,9 +5,9 @@ import org.apache.commons.text.StringSubstitutor;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public final class Util {
+public final class UriHelper {
 
-    private Util() {
+    private UriHelper() {
 
     }
 
