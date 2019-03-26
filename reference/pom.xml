@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>com.github.sitture</groupId>
 			<artifactId>gauge-requests</artifactId>
-			<version>${project.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
