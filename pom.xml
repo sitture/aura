@@ -24,7 +24,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<checkstyle.version>8.18</checkstyle.version>
+		<checkstyle.version>8.29</checkstyle.version>
 		<maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
 		<skipTests>false</skipTests>
 		<archetype-packaging.version>3.0.1</archetype-packaging.version>
