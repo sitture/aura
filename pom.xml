@@ -15,8 +15,8 @@
 	<url>${project.artifactId}.github.io</url>
 	<description>A simple library of pre-defined steps for running API Tests within a Gauge-Java based project.</description>
 	<properties>
-		<gauge-java.version>0.7.1</gauge-java.version>
-		<gauge-maven-plugin.version>1.4.1</gauge-maven-plugin.version>
+		<gauge-java.version>0.7.8</gauge-java.version>
+		<gauge-maven-plugin.version>1.4.3</gauge-maven-plugin.version>
 		<junit.version>4.12</junit.version>
 		<system-rules.version>1.17.2</system-rules.version>
 		<log4j.version>2.11.1</log4j.version>
@@ -24,8 +24,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<checkstyle.version>8.29</checkstyle.version>
-		<maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
+		<checkstyle.version>8.33</checkstyle.version>
+		<maven-checkstyle-plugin.version>3.1.1</maven-checkstyle-plugin.version>
 		<skipTests>false</skipTests>
 		<archetype-packaging.version>3.0.1</archetype-packaging.version>
 		<archetype.test.ignoreEOLStyle>true</archetype.test.ignoreEOLStyle>
